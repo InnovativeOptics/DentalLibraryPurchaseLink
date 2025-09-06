@@ -45,6 +45,14 @@ generate_filt_data_combined <- function(filt_data_laser, filt_data_loupe){
         x
       })
 
+    } else if(filt_data_loupe$`Compatible Loupe Insert` == "IVL.R.2"){
+      print("IVL.R.2 Pi1")
+      filt_data_laser <- lapply(filt_data_laser, function(x) {
+        x[['Website']] <- "https://innovativeoptics.com/product/ivl-r-2-pi1-laser-insert-for-loupes/"
+        x[['Image']] <- "https://innovativeoptics.com/wp-content/uploads/2025/09/IVL.R.2.Pi1_-1.jpeg"
+        x
+      })
+
     }
     #    else if(filt_data_loupe$`Compatible Loupe Insert` == "IVR.R"){
     #      print("IVR.R Pi1")
@@ -132,7 +140,17 @@ generate_filt_data_combined <- function(filt_data_laser, filt_data_loupe){
         x
       })
 
-    } #else if(filt_data_loupe$`Compatible Loupe Insert` == "IVR.R"){
+    } else if(filt_data_loupe$`Compatible Loupe Insert` == "IVL.R.2"){
+      print("IVL.R.2 Pi17")
+      filt_data_laser <- lapply(filt_data_laser, function(x) {
+        x[['Website']] <- "https://innovativeoptics.com/product/ivl-r-2-pi17-laser-insert-for-loupes/"
+        x[['Image']] <- "https://innovativeoptics.com/wp-content/uploads/2025/09/IVL.R.2.Pi17-scaled.jpeg"
+        x
+      })
+
+    }
+
+    #else if(filt_data_loupe$`Compatible Loupe Insert` == "IVR.R"){
     #      print("IVR.R Pi17")
     #      filt_data_laser <- lapply(filt_data_laser, function(x) {
     #        x[['Website']] <- "https://innovativeoptics.com/product/ivr-r-pi17-laser-insert-for-loupes/"
@@ -175,8 +193,18 @@ generate_filt_data_combined <- function(filt_data_laser, filt_data_loupe){
     }  else if(filt_data_loupe$`Compatible Loupe Insert` == "IVL.R"){
       print("IVL.R Pi19")
       filt_data_laser <- lapply(filt_data_laser, function(x) {
-        x[['Website']] <- "https://innovativeoptics.com/product/pi19-inview-large-laser-clip-in/"
+        x[['Website']] <- "https://innovativeoptics.com/product/ivl-r-pi19-laser-insert-for-loupes/"
         x[['Image']] <- "https://innovativeoptics.com/wp-content/uploads/2022/05/IVL-Clip-In-Pi19-Lens-1.jpg"
+        x
+      })
+
+    }
+
+    else if(filt_data_loupe$`Compatible Loupe Insert` == "IVL.R.2"){
+      print("IVL.R.2 Pi19")
+      filt_data_laser <- lapply(filt_data_laser, function(x) {
+        x[['Website']] <- "https://innovativeoptics.com/product/ivl-r-2-pi19-laser-insert-for-loupes/"
+        x[['Image']] <- "https://innovativeoptics.com/wp-content/uploads/2025/09/IVL.R.2.Pi19-scaled.jpeg"
         x
       })
 
@@ -228,6 +256,14 @@ generate_filt_data_combined <- function(filt_data_laser, filt_data_loupe){
         x
       })
 
+    } else if(filt_data_loupe$`Compatible Loupe Insert` == "IVL.R.2"){
+      print("IVL.R.2 Pi23")
+      filt_data_laser <- lapply(filt_data_laser, function(x) {
+        x[['Website']] <- "https://innovativeoptics.com/product/ivl-r-2-pi23-laser-insert-for-loupes/"
+        x[['Image']] <- "https://innovativeoptics.com/wp-content/uploads/2025/09/IVL.R.2.Pi23.jpeg"
+        x
+      })
+
     }
     #    else if(filt_data_loupe$`Compatible Loupe Insert` == "IVR.R"){
     #      print("IVR.R Pi23")
@@ -273,6 +309,16 @@ generate_filt_data_combined <- function(filt_data_laser, filt_data_loupe){
       filt_data_laser <- lapply(filt_data_laser, function(x) {
         x[['Website']] <- "https://innovativeoptics.com/product/ivl-r-pi32-laser-insert-for-loupes/"
         x[['Image']] <- "https://innovativeoptics.com/wp-content/uploads/2022/05/IVL-Clip-In-Pi17-Lens.jpg"
+        x
+      })
+
+    }
+
+    else if(filt_data_loupe$`Compatible Loupe Insert` == "IVL.R.2"){
+      print("IVL.R.2 Pi32")
+      filt_data_laser <- lapply(filt_data_laser, function(x) {
+        x[['Website']] <- "https://innovativeoptics.com/product/ivl-r-2-pi32-laser-insert-for-loupes/"
+        x[['Image']] <- "https://innovativeoptics.com/wp-content/uploads/2025/09/IVL.R.2.Pi32-scaled.jpeg"
         x
       })
 
